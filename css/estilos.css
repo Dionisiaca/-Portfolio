@@ -109,6 +109,7 @@ header .contenedor-texto .texto .profesion {
 .main .acerca-de .texto a {
   color: #ea6748;
   font-weight: bold;
+  font-size: 30px;
   text-decoration: none;
   font-style: italic;
 }
