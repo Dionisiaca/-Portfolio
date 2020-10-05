@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/estilos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script src="./main.js"></script>
 </head>
 
 <body>
@@ -133,13 +135,15 @@
   <footer>
     <div class="contenedor">
       <section class="contacto" id='contacto'>
-        <h3 class="titulo">Contacto</h3>
-        <form class="formulario" action="">
-          <input type="text" placeholder="Nombre" name="nombre" required />
-          <input type="email" placeholder="Correo" name="correo" required />
-          <textarea name="mensaje" placeholder="Mensaje:"></textarea>
-          <input class="boton" type="submit" value="Enviar" />
+        <h3 class="titulo">Contact</h3>
+        <form class="formulario"  action="https://formspree.io/claudia.custodiog@gmail.com" method="POST">
+          <input type="text" placeholder="Name" name="name" id="name" required />
+          <input type="email" placeholder="Email adress" name="email" id="email" required />
+          <input type="text" placeholder="Subject" name="subject" id="subject" required />
+          <textarea name="messagge" id= "message" placeholder="Message:"></textarea>
+          <input class="boton" type="submit" />
         </form>
+        <div class="status"></div>
       </section>
     </div>
 
